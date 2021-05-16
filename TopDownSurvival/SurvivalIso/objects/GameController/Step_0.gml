@@ -12,7 +12,7 @@
 	}
 #endregion
 
-if(keyboard_check_released(vk_enter)){
+if(keyboard_check_released(vk_enter) || mouse_check_button_pressed(mb_left) && room != world_rm){
 	room_goto(world_rm);	
 }
 

@@ -30,6 +30,13 @@
 
 #region enums
 	init_camera_enum();
+	
+	enum weaponType{
+		unarmed,
+		melee,
+		pistol,
+		rifle
+	}
 #endregion
 
 //hide windows cursor

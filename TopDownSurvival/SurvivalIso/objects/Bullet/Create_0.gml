@@ -12,7 +12,4 @@ z = -12;
 weight = 0.01;
 dir = 0
 // Inherit the parent eventw
-with (instance_place(x, y, Enemy)){
-	hp -= damage;
-	instance_destroy(other);
-}
+damage = 10;
