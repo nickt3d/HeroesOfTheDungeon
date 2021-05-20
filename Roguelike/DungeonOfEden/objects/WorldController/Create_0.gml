@@ -16,14 +16,13 @@ for(var l = dungeonh; l > 0; l--){
 		for(var j = 0; j < dungeond; j++){
 			//fill the floor with empty tildata
 			floor_data[# i, j] = tile_type.empty;
-			if(l == 1){
-				ds_grid_set_region(floor_data, 5, 7, 10, 13, tile_type.block);
-				ds_grid_set_region(floor_data, 3, 5, 14, 8, tile_type.block);
-			}
 		}
 	}
 	dungeon_data[? "map_data"][| l] = floor_data;
 }    
+
+set_tile_region(1, 5, 10, 15, 6, tile_type.block);
+set_tile_region(3, 1, 6, 7, 22, tile_type.block);
 
 with(instance_create_layer(0, 0, "Camera", CameraController)){
 	
