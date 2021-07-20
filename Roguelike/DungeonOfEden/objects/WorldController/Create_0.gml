@@ -24,6 +24,15 @@ for(var l = dungeonh; l > 0; l--){
 set_tile_region(1, 5, 10, 15, 6, tile_type.block);
 set_tile_region(3, 1, 6, 7, 22, tile_type.block);
 
+with(instance_create_layer(0, 0, "Entities", Player)){
+	
+}
+
 with(instance_create_layer(0, 0, "Camera", CameraController)){
+	state = cam_mode.follow;
+	target = Player;
+}
+
+with(instance_create_layer(200, 200, "Entities", Zombie)){
 	
 }
