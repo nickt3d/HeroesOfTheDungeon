@@ -44,7 +44,7 @@ switch state {
 #endregion
 
 #region zoom
-	if(keyboard_check(vk_numpad8)){
+	if(mouse_wheel_up()){
 		zoom += 0.1;
 		if(zoom >= maxzoom){
 			zoom = maxzoom;	
@@ -55,7 +55,7 @@ switch state {
 		var pm = matrix_build_projection_ortho(vx, vy, 0, 10000.0);
 		camera_set_proj_mat(camera, pm);
 	}
-	if(keyboard_check(vk_numpad2)){
+	if(mouse_wheel_down()){
 		zoom -= 0.1;
 		if(zoom <= 1){
 			zoom = 1;	

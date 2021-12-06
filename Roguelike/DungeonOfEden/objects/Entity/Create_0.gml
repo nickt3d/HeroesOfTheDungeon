@@ -4,7 +4,7 @@ hspd = 0;
 vspd = 0;
 
 //stats
-max_move_speed = 100;
+max_move_speed = 50;
 
 hp = 10;
 attack = 5;
