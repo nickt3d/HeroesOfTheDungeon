@@ -11,12 +11,12 @@ function read_map_data(map){
 	//render the sprite to the surface
 	draw_sprite(map, 0, 0, 0);
 	
-	////use a buffer to get pixel data
+	//// TODO: use a buffer to get pixel data
 	//var size = w*h*4; // set the size to a 4 bit buffer for each pixel
 	//var buff = buffer_create(size, buffer_fast, 1);
 	//buffer_get_surface(buff, surf, 0, 0, 0);
 	
-	//read the pixel data from the buffer
+	//read the pixel data from the surface
 	for(var xx = 0; xx < w; xx++){
 		for(var yy = 0; yy < h; yy++){
 			//set the grid to 0 for a white pixel and 1 for a black one.
@@ -32,6 +32,10 @@ function read_map_data(map){
 			//}
 		}
 	}
+	
+	
+	//TODO: change the values to tile data maps
+	//TODO: auto tile configurations
 		
 	surface_reset_target();
 	
