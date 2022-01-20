@@ -16,6 +16,10 @@ with(instance_create_layer(xs, ys, "Entities", Player)){
 	
 }
 
+with(instance_create_layer(xs + 40, ys, "Entities", Collectable_weapon)){
+	
+}
+
 with(instance_create_layer(0, 0, "Camera", CameraController)){
 	state = cam_mode.follow; 
 	target = Player;

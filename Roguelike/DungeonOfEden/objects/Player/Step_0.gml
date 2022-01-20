@@ -4,13 +4,16 @@ my = mouse_y;
 //Basic movement (to be removed)
 if(mouse_check_button(mb_left)){
 	dir = point_direction(x, y, mx, my);
-	spd = max_move_speed;
+	//spd = max_move_speed;
 } else {
 		
 }
 
 if(mouse_check_button_pressed(mb_left)){
-	pathfind(x, y, mx, my);
+	//check if tile is collider
+	if(!instance_place(mx, my, TileCollider)) {
+		pathfind(x, y, mx, my);
+	}
 }
 
 #region Pathfinding
